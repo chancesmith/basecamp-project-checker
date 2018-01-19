@@ -1,7 +1,7 @@
 var projectsCount = $('article').length
 
 // remove projects that were updated in the last 24 hours
-$('article:contains("hours ago")').remove()
+$('article:contains("hours ago"), article:contains("minutes ago")').remove()
 
 // now get new count of projects left over
 var projectsUpdateNeededCount = $('article').length
